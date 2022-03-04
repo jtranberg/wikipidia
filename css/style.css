@@ -1,0 +1,49 @@
+header{
+    height: 75px;
+    background-color: rgb(15, 201, 139);
+}
+
+
+.col-container {
+   margin: 25px;
+   
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+  }
+  
+  .col1 {
+      column-rule: 4px outset #ff00ff;
+    background-color: aquamarine;
+      padding-left: 25px;
+      width:33%;
+    display: table-cell; /* Make elements inside the container behave like table cells */
+  }
+  .col2 {
+      
+    background-color: rgb(127, 157, 255);
+    padding-left: 25px;
+    width: 33%;
+    display: table-cell; /* Make elements inside the container behave like table cells */
+  } .col3 {
+    background-color: rgb(127, 193, 255);
+    padding-left: 25px;
+    width: 33%;
+    display: table-cell; /* Make elements inside the container behave like table cells */
+  }
+  .col11 {
+    background-color: rgb(168, 255, 127);
+      padding-left: 25px;
+      width:33%;
+    display: table-cell; /* Make elements inside the container behave like table cells */
+  }
+  .col21 {
+    background-color: rgb(255, 195, 127);
+    padding-left: 25px;
+    width: 33%;
+    display: table-cell; /* Make elements inside the container behave like table cells */
+  } .col31 {
+    background-color: rgb(236, 255, 127);
+    padding-left: 25px;
+    width: 33%;
+    display: table-cell; /* Make elements inside the container behave like table cells */
+  }
