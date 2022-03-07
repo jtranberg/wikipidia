@@ -1,14 +1,47 @@
-header{
-    height: 75px;
-    background-color: rgb(15, 201, 139);
+* {
+  margin: 15px ; 
+  
 }
+
+body {
+  background-color: aqua;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+  
+
+
+header {
+  height: 150px;
+  background-color: rgb(15, 201, 139);
+}
+.topHeader {
+  height: 220px;
+  background-color: rgb(15, 201, 139);
+  text-align:left;
+  
+  
+}
+
+h1 {
+  font-size: 75px;
+}
+.header2 {
+  font-size: 75px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+
 
 
 .col-container {
    margin: 25px;
    
     display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
+    width:98%; /* Set full-width to expand the whole page */
+    display: flex;
+    gap: 1%;
   }
   
   .col1 {
@@ -16,6 +49,7 @@ header{
     background-color: aquamarine;
       padding-left: 25px;
       width:33%;
+      
     display: table-cell; /* Make elements inside the container behave like table cells */
   }
   .col2 {
@@ -47,3 +81,65 @@ header{
     width: 33%;
     display: table-cell; /* Make elements inside the container behave like table cells */
   }
+  /* HTML CSSResult Skip Results Iframe
+EDIT ON
+.stationary .move {
+  mix-blend-mode: darken;
+} */
+
+/* #stationary2 #move2 {
+  mix-blend-mode: lighten;
+}
+
+#stationary3 #move3 {
+  mix-blend-mode: difference;
+}
+
+#stationary4 #move4 {
+  mix-blend-mode: screen;
+}
+
+#stationary5 #move5 {
+  mix-blend-mode: multiply;
+} */
+
+
+.container {
+  position: relative;
+  width: 50%;
+  height: fit-content;
+  margin: 20px auto;
+  outline: black solid 1px;
+  padding: 20px;
+}
+
+.container>p{
+  margin: 0;
+  padding: 0;
+  font-size:2rem;
+  font-wight: 700;
+}
+
+
+.stationary {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background-image: linear-gradient(45deg, #9b3434 12.50%, #f7f7f7 12.50%, #f7f7f7 25%, #b0aeae 25%, #b0aeae 37.50%, #858585 37.50%, #858585 50%, #000000 50%, #000000 62.50%, #f7f7f7 62.50%, #f7f7f7 75%, #b0aeae 75%, #b0aeae 87.50%, #858585 87.50%, #adec59 100%);
+}
+
+.move {
+  width: 100px;
+  height: 50px;
+/*   color: blue; */
+  position: absolute;
+  animation: mymove 5s infinite alternate cubic-bezier(0.63, 0.07, 0.15, 0.57);
+  font-size: 3rem;
+  font-weight: 700;
+  background-image: linear-gradient(145deg, #712ac2 12.50%, #f7f7f7 12.50%, #f7f7f7 25%, #b0aeae 25%, #b0aeae 37.50%, #858585 37.50%, #858585 50%, #000000 50%, #000000 62.50%, #f7f7f7 62.50%, #f7f7f7 75%, #b0aeae 75%, #b0aeae 87.50%, #858585 87.50%, #a254eb 100%);
+}
+
+@keyframes mymove {
+  0%   {left: 0%;}
+  100% {left: calc(100% - 20px);}
+}
